@@ -1,0 +1,109 @@
+<tr><td>
+
+<div id="slideshow">
+  <div id="slidesContainer">
+    <div class="slide">
+      <div  style=position:relative" id="picture'.$i.'" class="picture_partnaire"><img src="images/partnair/logoo_1.jpg" ></div>
+    </div>
+    <div class="slide">
+     <div  style=position:relative" id="picture'.$i.'" class="picture_partnaire"><img src="images/partnair/logoo_2.jpg" ></div>
+    </div>
+    <div class="slide">
+     <div  style=position:relative" id="picture'.$i.'" class="picture_partnaire"><img src="images/partnair/logoo_3.jpg" ></div>
+    </div>
+    <div class="slide">
+     <div  style=position:relative" id="picture'.$i.'" class="picture_partnaire"><img src="images/partnair/logoo_4.jpg" ></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--<div id="partnair_cont_sup">
+    <div id="partnair_cont" style="border:3px solid blue;">
+    <?php
+    $html ='';
+    for ($i = 1;$i < 16;$i++){
+        $html .= '<div  style=position:relative" id="picture'.$i.'" class="picture_partnaire"><img src="images/partnair/logoo_'.$i.'.jpg" ></div>';
+    } 
+    echo $html; 
+    ?>
+    </div>
+</div>-->
+</tr></td>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 560;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+
+  // Remove scrollbar in JS
+  $('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides
+  .wrapAll('<div id="slideInner"></div>')
+  // Float left to display horizontally, readjust .slides width
+  .css({
+    'float' : 'left',
+    'width' : slideWidth
+  });
+
+  // Set #slideInner width equal to total width of all slides
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert left and right arrow controls in the DOM
+  $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Move left</span>')
+    .append('<span class="control" id="rightControl">Move right</span>');
+
+  // Hide left arrow control on first load
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control')
+    .bind('click', function(){
+    // Determine new position
+      currentPosition = ($(this).attr('id')=='rightControl')
+    ? currentPosition+1 : currentPosition-1;
+
+      // Hide / show controls
+      manageControls(currentPosition);
+      // Move slideInner using margin-left
+      $('#slideInner').animate({
+        'marginLeft' : slideWidth*(-currentPosition)
+      });
+    });
+
+  // manageControls: Hides and shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+    if(position==0){ $('#leftControl').hide() }
+    else{ $('#leftControl').show() }
+    // Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() }
+    else{ $('#rightControl').show() }
+    }
+  });
+  /*
+var current = 1;
+var html = '<?php echo $html;?>';
+
+function move_partnair(){
+    $('#picture'+current).slideUp(2000);
+    current++;
+//     $('.picture_partnaire').animate( { top: '-=69px' }, 1000 );
+//     if (current == 10 || current == 25 || current == 50 || current == 65 || current == 80 || current == 95 || current == 110 || current == 125){
+//         console.log('asf');
+//     }
+}
+
+$(document).ready(function () {
+  window.setInterval("move_partnair()",2000);
+});*/
+
+</script>

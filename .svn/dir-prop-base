@@ -1,0 +1,6 @@
+K 11
+svn::ignore
+V 23
+includes/configure.php
+
+END
