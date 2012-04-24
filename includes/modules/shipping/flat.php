@@ -26,23 +26,18 @@
       $this->enabled = ((MODULE_SHIPPING_FLAT_STATUS == 'true') ? true : false);// la valeur de test 'true' ou 'false' est convertie dans application_top depuis 'Oui' ou 'Non' ! laisser le test sur la valeur 'true'
 	  
       $this->values = array(
-		1 => 14,
-		2 => 7,
-		3 => 0,
+		1 => 7,
+		
 	  );
 	  
-      $discounts = $easy_discount->get_all();
-      foreach ($discounts as $discount){
-      	if (in_array($discount['generated_by'], array('pack_reduction'))){
-      		$this->values = array(
-		1 => 7,
-		2 => 7,
-		3 => 7,
-		4 => 7,
-		5=> 0
-	  );
-      	}
-      }
+	  /*$discounts = $easy_discount->get_all();
+	  foreach ($discounts as $discount){
+	  	if (in_array($discount['generated_by'], array('pack_reduction'))){
+	  		$this->values = array(
+	  		1 => 7,
+	  		);
+	  	}
+	  }*/
 
 
 	  if ( ($this->enabled == true) && ((int)MODULE_SHIPPING_FLAT_ZONE > 0) ) {

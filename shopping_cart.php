@@ -29,12 +29,12 @@ global $easy_discount;
   $quote = $shipping_modules->quote('flat', 'flat');
   $fp = $quote[0]['methods'][0]['cost'];
   
-  if (defined('SPECIAL_PROMO'.$total))
-    $promo_nb = '<h1 class="ubber_promo'.$total.'">'.constant('SPECIAL_PROMO'.$total).'</h1>';
-  else {
+ // if (defined('SPECIAL_PROMO'.$total))
+  //  $promo_nb = '<h1 class="ubber_promo'.$total.'">'.constant('SPECIAL_PROMO'.$total).'</h1>';
+ // else {
 	$flat = new flat();
     $promo_nb = sprintf(SPECIAL_PROMO, $flat->get_offers());
-  }
+ // }
 
   $subtotal_cart = $cart->show_total();
   $discounts = $easy_discount->get_all();
