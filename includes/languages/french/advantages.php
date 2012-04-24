@@ -1,13 +1,16 @@
 <?php
 define('NAVBAR_TITLE', 'Avantages');
-define('TEXT_INFORMATION','<br /><h2 class="text_rose">Pour profiter de notre offre :</h2>
+define('TEXT_INFORMATION','
+<br /><h2 class="text_rose">Op&eacute;ration Cashback</h2>
 <span style="font-size:14px;line-height:19px;">
--  Entrez le code <b>"DEAL"</b> dans le champ "Votre code cadeau" en haut de chaque page ou en-dessous sur la page de panier. Beneficiez d\'une reduction immediate de 47.69 Euros sur les produits suivant:<br />
+En ce moment sur parfumreduc.com obtenez jusqu\'a  50 euros de r&eacute;duction sur votre commande.
+Plus vous ajoutez des produits dans votre panier, plus nous vous offrons des r&eacute;ductions importantes sur votre commande.
 <ul>
-	<li>LIZ SPORT de Liz Claiborne MASSAGE OIL 125 ml d\'une valeur de 21.05euros</li>
-	<li>MISS BOUCHERON de Boucheron	Gel douche 45 ml d\'une valeur de 19,97euros</li>
-	<li>ANAIS ANAIS de Cacharel Lotion pour le corps 50 ml d\'une valeur de 20,51euros</li>
-	<li>MAUBOUSSIN de Mauboussin Lotion pour le corps 100 ml d\'une valeur de 21.05euros</li>
+<li>Si vous achetez 2 produits vous b&eacute;n&eacute;ficiez de 7 euros de r&eacute;duction imm&eacute;diatement</li>
+<li>Si vous achetez 3 produits vous b&eacute;n&eacute;ficiez de 18 euros de r&eacute;duction imm&eacute;diatement</li>
+<li>Si vous achetez 4 produits vous b&eacute;n&eacute;ficiez de 30  euros de r&eacute;duction imm&eacute;diatement</li>
+<li>Si vous achetez 5 produits vous b&eacute;n&eacute;ficiez de 38  euros de r&eacute;duction imm&eacute;diatement</li>
+<li>Si vous achetez 6 produits vous b&eacute;n&eacute;ficiez de 50  euros de r&eacute;duction imm&eacute;diatement</li>
 </ul>
 </span>
 ');
