@@ -204,7 +204,7 @@
       }
     }
     
-//si un seul des parametres est envoyé
+//si un seul des parametres est envoyï¿½
 // show the products of a specified manufacturer
     if (isset($HTTP_GET_VARS['manufacturers_id'])) {
       if (isset($HTTP_GET_VARS['filter_id']) && tep_not_null($HTTP_GET_VARS['filter_id'])) {
@@ -373,7 +373,7 @@
 
 <?php if ($check_server == 'fr') { ?>
 
-<p style="margin-top:10px;font-family:verdana;"><?php  echo nl2br(NEW_INTRO);?></p>
+<p style="padding-top:1px;font-family:verdana;"><?php  echo nl2br(NEW_INTRO);?></p>
 
 <?php } else {
     if (file_exists(DIR_WS_IMAGES.'entete.jpg'))
