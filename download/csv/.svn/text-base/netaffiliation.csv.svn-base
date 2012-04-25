@@ -1,1 +1,0 @@
-"p.products_id";"products_quantity";"products_model";"products_price";"products_status";"products_ordered";"products_name";"products_description";"products_viewed";"m.manufacturers_name as marque";"p.gender as Gender";"p.gamme";"p.item_size";"p.type as Type";"products_image";"pd.products_id";"EAN";"frais_port"
