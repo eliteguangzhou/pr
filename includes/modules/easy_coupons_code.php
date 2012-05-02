@@ -174,7 +174,7 @@ if (ACTIVATE_DISCOUNT) {
 										$error = false;
 										$products = array();
 										while($rs = tep_db_fetch_array($result)) {
-											if (!$error && ($rs['products_quantity'] <= 0 || $rs['products_status'] == 1)) {
+											if (!$error && ($rs['products_quantity'] <= 0 /*|| $rs['products_status'] == 1*/)) {
 												$messageStack->add_session('cart',EC_OOS,'error');
 												$messageStack->add('cart',EC_OOS,'error');
 												$error = true;
