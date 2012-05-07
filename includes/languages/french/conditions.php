@@ -46,13 +46,11 @@ L\'offre Hugo Boss n\'est pas cumulable avec les autres offres sur le site.
 <h3>Article 3. La commande et la validation de la transaction.</h3>
 Toute commande est li&eacute;e &agrave; l\'acceptation sans r&eacute;serve des pr&eacute;sentes conditions g&eacute;n&eacute;rales de vente.
 <br /><br />
-Pour tout type de commande, l\'utilisateur choisit sa formule d\'abonnement qui s\'ajoutera automatiquement &agrave; son panier.
-<br /><br />
 Puis il choisit son univers ou sa marque.
 <br /><br />
 Il en choisit ensuite le produit exact en l\'ajoutant au panier. La quantit&eacute; de produits peut-&ecirctre modifi&eacute;e &agrave; tout moments dans l\'onglet " Mon Panier ", il suffira juste de cliquer, une fois la quantit&eacute; modifi&eacute;e, sur " Recalculer ".
 <br /><br />
-Il est toutefois pr&eacute;cis&eacute; que chaque commande pour &ecirctre valable doit contenir '.MIN_PRODUCTS.' articles au minimum jusqu\'&agrave; '.MAX_QTY_IN_CART.' articles maximum.
+Il est toutefois pr&eacute;cis&eacute; que chaque commande pour &ecirctre valable doit contenir 1 articles au minimum jusqu\'&agrave; 6 articles maximum.
 <br /><br />
 Une fois la commande compl&egrave;te, un r&eacute;capitulatif s\'affichera alors, que l\'utilisateur devra valider, ou modifier si celui-ci le d&eacute;sire. Il peut aussi int&eacute;grer un code promo pour b&eacute;n&eacute;ficier d\'une r&eacute;duction si celui-ci en b&eacute;n&eacute;ficie.
 <br /><br />
@@ -67,8 +65,6 @@ D&egrave;s enregistrement de la commande, un accus&eacute; de r&eacute;ception d
 - <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> recommande &agrave; l\'Utilisateur de conserver ces informations sur un document papier ou informatique.
 <br />
 - <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a>  se r&eacute;serve le droit de demander des pi&egrave;ces justificatives &agrave;  l\'utilisateur avant toute validation de commande d\'un montant &eacute;lev&eacute; et / ou d\'annuler toute commande d\'un utilisateur avec lequel il existerait un litige relatif au paiement d\'une commande ant&eacute;rieure ou si celui-ci ne fournit pas les pi&egrave;ces justificatives demand&eacute;es.
-<br /><br />
-La carte "membre club" est personnelle et correspond a une seule et unique adresse de facturation et de livraison. Cette adresse servira au controle d\'identite en cas de besoin.
 <br /><br />
 Les achats doivent se faire exclusivement dans le but d\'une utilisation personnelle. Tout achat effectue dans le but de la revente est interdit,  et peut faire l objet d une exclusion du club sans preavis et sans remboursement au prealable de la cotisation "membre club"
 <br /><br />
