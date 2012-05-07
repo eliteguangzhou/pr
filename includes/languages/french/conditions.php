@@ -70,7 +70,7 @@ Les achats doivent se faire exclusivement dans le but d\'une utilisation personn
 <br /><br />
 Enfin de s\'assurer du respect de ces r&egrave;gles, <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> instaure les limitations suivantes :<br />
 - Nombre de produits achetables par jour fix&eacute;&agrave; '.MAX_QTY_IN_CART.' maximum,<br />
-- Cumul de montant de commandes par semaine fix&eacute; &agrave; 600 € maximum.
+- Cumul de montant de commandes par semaine fix&eacute; &agrave; 600 $euro; maximum.
 <br />
 <h3>Article 4. Paiement.</h3>
 Les prix de vente des produits en ligne sur le site, indiqu&eacute;s en Euros, sont ceux en vigueur au moment de l\'enregistrement du bon de commande par l\'Utilisateur.
@@ -85,7 +85,7 @@ De fa&ccedilon imm&eacute;diate par Carte Bancaire (Bleue, Visa, Eurocard/Master
 <br /><br />
 Par avoirs en ligne <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> pour r&eacute;gler tout ou partie de la commande. Attention, si le montant total de la commande est inf&eacute;rieur &agrave; la valeur de l\'avoir en ligne, <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> ne rembourse pas la diff&eacute;rence. Les avoirs en ligne sont valables 3 mois.
 <br /><br />
-Important: Les paiements par Carte Bancaire doivent &ecirctre sup&eacute;rieurs &agrave; 1€.
+Important: Les paiements par Carte Bancaire doivent &ecirctre sup&eacute;rieurs &agrave; 1$euro;.
 <br /><br />
 Afin d\'assurer la s&eacute;curit&eacute; du paiement par carte bancaire, le client se voit dans l\'obligation de transmettre le cryptogramme visuel de sa carte bancaire.
 <br />
