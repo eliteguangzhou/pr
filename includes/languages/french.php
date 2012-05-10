@@ -48,7 +48,7 @@ define('CHARSET', 'iso-8859-1');
 define('TITLE', STORE_NAME);
 
 // header text in includes/header.php
-define('HEADER_TITLE_CREATE_ACCOUNT', 'Créer un compte');
+define('HEADER_TITLE_CREATE_ACCOUNT', 'Crï¿½er un compte');
 define('HEADER_TITLE_MY_ACCOUNT', 'Mon compte');
 define('HEADER_TITLE_CART_CONTENTS', 'Voir panier');
 define('HEADER_TITLE_CHECKOUT', 'Commander');
@@ -56,12 +56,12 @@ define('HEADER_TITLE_TOP', 'Accueil');
 define('HEADER_TITLE_CATALOG', 'Catalogue');
 define('HEADER_TITLE_LOGOFF', 'Fermeture de session');
 define('HEADER_TITLE_LOGIN', 'Ouverture de session');
-define('HEADER_NEW_DISCOUNT', '<a href="'.tep_href_link('sponsorship_discount.php').'" id="new_discount">Nouveau code de réduction ! Cliquez ici !</a>');
-define('HEADER_NEW_DISCOUNTS', '<a href="'.tep_href_link('sponsorship_discount.php').'" id="new_discount">Nouveaux codes de réduction ! Cliquez ici !</a>');
-define('HEADER_TITLE_MENTIONS_LEGALES', 'Mentions légales');
+define('HEADER_NEW_DISCOUNT', '<a href="'.tep_href_link('sponsorship_discount.php').'" id="new_discount">Nouveau code de rï¿½duction ! Cliquez ici !</a>');
+define('HEADER_NEW_DISCOUNTS', '<a href="'.tep_href_link('sponsorship_discount.php').'" id="new_discount">Nouveaux codes de rï¿½duction ! Cliquez ici !</a>');
+define('HEADER_TITLE_MENTIONS_LEGALES', 'Mentions lï¿½gales');
 
 // footer text in includes/footer.php
-define('FOOTER_TEXT_REQUESTS_SINCE', 'requêtes depuis le');
+define('FOOTER_TEXT_REQUESTS_SINCE', 'requï¿½tes depuis le');
 
 // text for gender
 define('MALE', 'Homme');
@@ -73,18 +73,18 @@ define('FEMALE_ADDRESS', 'Mme.');
 define('DOB_FORMAT_STRING', 'jj/mm/aaaa');
 
 // categories box text in includes/boxes/categories.php
-define('BOX_HEADING_CATEGORIES', 'Catégories');
+define('BOX_HEADING_CATEGORIES', 'Catï¿½gories');
 
 // manufacturers box text in includes/boxes/manufacturers.php
 define('BOX_HEADING_MANUFACTURERS', 'Marques');
 
 // whats_new box text in includes/boxes/whats_new.php
-define('BOX_HEADING_WHATS_NEW', 'A découvrir');
+define('BOX_HEADING_WHATS_NEW', 'A dï¿½couvrir');
 
 // quick_find box text in includes/boxes/quick_find.php
 define('BOX_HEADING_SEARCH', 'Recherche rapide');
-define('BOX_SEARCH_TEXT', 'Utilisez des mots-clés pour trouver le produit que vous recherchez.');
-define('BOX_SEARCH_ADVANCED_SEARCH', 'Recherche avancée');
+define('BOX_SEARCH_TEXT', 'Utilisez des mots-clï¿½s pour trouver le produit que vous recherchez.');
+define('BOX_SEARCH_ADVANCED_SEARCH', 'Recherche avancï¿½e');
 
 // specials box text in includes/boxes/specials.php
 define('BOX_HEADING_SPECIALS', 'Bons plans');
@@ -93,7 +93,7 @@ define('BOX_HEADING_SPECIALS', 'Bons plans');
 define('BOX_HEADING_REVIEWS', 'Critiques');
 define('BOX_REVIEWS_WRITE_REVIEW', 'Ecrire une critique pour ce produit !');
 define('BOX_REVIEWS_NO_REVIEWS', 'Il n\'y a actuellement aucune critique pour ce produit');
-define('BOX_REVIEWS_TEXT_OF_5_STARS', '%s sur 5 étoiles !');
+define('BOX_REVIEWS_TEXT_OF_5_STARS', '%s sur 5 ï¿½toiles !');
 
 // shopping_cart box text in includes/boxes/shopping_cart.php
 define('BOX_HEADING_SHOPPING_CART', 'Panier');
@@ -108,8 +108,8 @@ define('BOX_HEADING_BESTSELLERS_IN', 'Meilleures ventes dans<br>&nbsp;&nbsp;');
 
 // notifications box text in includes/boxes/products_notifications.php
 define('BOX_HEADING_NOTIFICATIONS', 'Notifications');
-define('BOX_NOTIFICATIONS_NOTIFY', 'Me prévenir des mises à jour de <b>%s</b>');
-define('BOX_NOTIFICATIONS_NOTIFY_REMOVE', 'Ne plus me prévenir des mises à jour de <b>%s</b>');
+define('BOX_NOTIFICATIONS_NOTIFY', 'Me prï¿½venir des mises ï¿½ jour de <b>%s</b>');
+define('BOX_NOTIFICATIONS_NOTIFY_REMOVE', 'Ne plus me prï¿½venir des mises ï¿½ jour de <b>%s</b>');
 
 // manufacturer box text
 define('BOX_HEADING_MANUFACTURER_INFO', 'Information fabricant');
@@ -124,20 +124,20 @@ define('BOX_HEADING_CURRENCIES', 'Devises');
 
 // information box text in includes/boxes/information.php
 define('BOX_HEADING_INFORMATION', 'Informations');
-define('BOX_INFORMATION_PRIVACY', 'Confidentialité');
+define('BOX_INFORMATION_PRIVACY', 'Confidentialitï¿½');
 define('BOX_INFORMATION_CONDITIONS', 'CGV');
-define('BOX_INFORMATION_SHIPPING', 'Expédition &amp; retours');
+define('BOX_INFORMATION_SHIPPING', 'Expï¿½dition &amp; retours');
 define('BOX_INFORMATION_CONTACT', 'Contactez-nous');
 define('BOX_INFORMATION_ABOUT_US', 'Qui sommes-nous');
-define('BOX_INFORMATION_SHIPPING_DETAILS', 'Détails d\'expédition');
+define('BOX_INFORMATION_SHIPPING_DETAILS', 'Dï¿½tails d\'expï¿½dition');
 define('BOX_INFORMATION_RETURNS', 'Retours');
 define('BOX_INFORMATION_CANCEL', 'Annulations');
 define('BOX_INFORMATION_TRACK', 'Suivi des commandes');
 define('BOX_INFORMATION_FAQ', 'FAQ');
 
 // tell a friend box text in includes/boxes/tell_a_friend.php
-define('BOX_HEADING_TELL_A_FRIEND', 'Faire connaître');
-define('BOX_TELL_A_FRIEND_TEXT', 'Envoyer cet article à un ami(e).');
+define('BOX_HEADING_TELL_A_FRIEND', 'Faire connaï¿½tre');
+define('BOX_TELL_A_FRIEND_TEXT', 'Envoyer cet article ï¿½ un ami(e).');
 
 // checkout procedure text
 define('CHECKOUT_BAR_DELIVERY', 'Information livraison');
@@ -152,71 +152,71 @@ define('TYPE_BELOW', 'Tapez ci-dessous');
 // javascript messages
 define('JS_ERROR', 'Des erreurs sont survenues durant le traitement de votre formulaire.\n\nVeuillez effectuer les corrections suivantes :\n\n');
 
-define('JS_REVIEW_TEXT', '* Le \'commentaire\' que vous avez entré doit avoir au moins ' . REVIEW_TEXT_MIN_LENGTH . ' caractères.\n');
-define('JS_REVIEW_RATING', '* Vous devez mettre une appréciation pour cet article.\n');
+define('JS_REVIEW_TEXT', '* Le \'commentaire\' que vous avez entrï¿½ doit avoir au moins ' . REVIEW_TEXT_MIN_LENGTH . ' caractï¿½res.\n');
+define('JS_REVIEW_RATING', '* Vous devez mettre une apprï¿½ciation pour cet article.\n');
 
-define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une méthode de paiement pour votre commande.\n');
+define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Veuillez choisir une mï¿½thode de paiement pour votre commande.\n');
 
-define('JS_ERROR_SUBMITTED', 'Ce formulaire a été déjà soumis. Veuillez appuyer sur Ok et attendez jusqu\'à ce que le traitement soit fini.');
+define('JS_ERROR_SUBMITTED', 'Ce formulaire a ï¿½tï¿½ dï¿½jï¿½ soumis. Veuillez appuyer sur Ok et attendez jusqu\'ï¿½ ce que le traitement soit fini.');
 
-define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une méthode de paiement pour votre commande.');
+define('ERROR_NO_PAYMENT_MODULE_SELECTED', 'Veuillez choisir une mï¿½thode de paiement pour votre commande.');
 
-define('CATEGORY_COMPANY', 'Détails sociétés');
-define('CATEGORY_PERSONAL', 'Vos détails personnels');
+define('CATEGORY_COMPANY', 'Dï¿½tails sociï¿½tï¿½s');
+define('CATEGORY_PERSONAL', 'Vos dï¿½tails personnels');
 define('CATEGORY_ADDRESS', 'Votre adresse');
 define('CATEGORY_CONTACT', 'Votre adresse');
 define('CATEGORY_OPTIONS', 'Options');
 define('CATEGORY_PASSWORD', 'Votre mot de passe');
 
-define('ENTRY_COMPANY', 'Nom de la société :');
+define('ENTRY_COMPANY', 'Nom de la sociï¿½tï¿½ :');
 define('ENTRY_COMPANY_ERROR', '');
 define('ENTRY_COMPANY_TEXT', '');
 define('ENTRY_GENDER', 'Genre :');
 define('ENTRY_GENDER_ERROR', 'Veuillez choisir votre genre.');
 define('ENTRY_GENDER_TEXT', '*');
-define('ENTRY_FIRST_NAME', 'Prénom :');
-define('ENTRY_FIRST_NAME_ERROR', 'Votre prénom doit contenir un minimum de ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' caractères.');
+define('ENTRY_FIRST_NAME', 'Prï¿½nom :');
+define('ENTRY_FIRST_NAME_ERROR', 'Votre prï¿½nom doit contenir un minimum de ' . ENTRY_FIRST_NAME_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_FIRST_NAME_TEXT', '*');
 define('ENTRY_LAST_NAME', 'Nom :');
-define('ENTRY_LAST_NAME_ERROR', 'Votre nom doit contenir un minimum de ' . ENTRY_LAST_NAME_MIN_LENGTH . ' caractères.');
+define('ENTRY_LAST_NAME_ERROR', 'Votre nom doit contenir un minimum de ' . ENTRY_LAST_NAME_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_LAST_NAME_TEXT', '*');
 define('ENTRY_DATE_OF_BIRTH', 'Date de naissance :');
 define('ENTRY_DATE_OF_BIRTH_ERROR', 'Votre date de naissance doit avoir ce format : JJ/MM/AAAA (ex. 28/12/1961)');
 define('ENTRY_DATE_OF_BIRTH_TEXT', '* (ex. 28/12/1961)');
 define('ENTRY_EMAIL_ADDRESS', 'Adresse email:');
 define('ENTRY_EMAIL_ADDRESS_CONFIRM', 'Confirmer adresse email:');
-define('ENTRY_EMAIL_ADDRESS_CONFIRM_ERROR', 'Votre confirmation d\'adresse email est différente de votre adresse email.');
-define('ENTRY_EMAIL_ADDRESS_ERROR', 'Votre adresse email doit contenir un minimum de ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' caractères.');
-define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'Votre adresse email ne semble pas être valide - veuillez effectuer toutes les corrections nécessaires.');
-define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'Votre adresse email est déjà enregistrée sur notre site - Veuillez ouvrir une session avec cette adresse email ou créez un compte avec une adresse différente.');
+define('ENTRY_EMAIL_ADDRESS_CONFIRM_ERROR', 'Votre confirmation d\'adresse email est diffï¿½rente de votre adresse email.');
+define('ENTRY_EMAIL_ADDRESS_ERROR', 'Votre adresse email doit contenir un minimum de ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' caractï¿½res.');
+define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'Votre adresse email ne semble pas ï¿½tre valide - veuillez effectuer toutes les corrections nï¿½cessaires.');
+define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', 'Votre adresse email est dï¿½jï¿½ enregistrï¿½e sur notre site - Veuillez ouvrir une session avec cette adresse email ou crï¿½ez un compte avec une adresse diffï¿½rente.');
 define('ENTRY_EMAIL_ADDRESS_TEXT', '*');
 define('ENTRY_EMAIL_ADDRESS_CONFIRM_TEXT', '*');
 define('ENTRY_STREET_ADDRESS', 'Adresse :');
-define('ENTRY_STREET_ADDRESS_ERROR', 'Votre adresse doit contenir un minimum de ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' caractères.');
+define('ENTRY_STREET_ADDRESS_ERROR', 'Votre adresse doit contenir un minimum de ' . ENTRY_STREET_ADDRESS_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_STREET_ADDRESS_TEXT', '*');
-define('ENTRY_SUBURB', 'Complément d\'adresse :');
+define('ENTRY_SUBURB', 'Complï¿½ment d\'adresse :');
 define('ENTRY_SUBURB_ERROR', '');
 define('ENTRY_SUBURB_TEXT', '');
 define('ENTRY_DIGICODE', 'Digicode :');
 define('ENTRY_DIGICODE_TEXT', '');
 define('ENTRY_POST_CODE', 'Code postal :');
-define('ENTRY_POST_CODE_ERROR', 'Votre code postal doit contenir un minimum de ' . ENTRY_POSTCODE_MIN_LENGTH . ' caractères.');
+define('ENTRY_POST_CODE_ERROR', 'Votre code postal doit contenir un minimum de ' . ENTRY_POSTCODE_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_POST_CODE_ERROR2', 'Nous ne livrons pas dans les DOM-TOM.');
 define('ENTRY_POST_CODE_TEXT', '*');
 define('ENTRY_CITY', 'Ville: ');
-define('ENTRY_CITY_ERROR', 'Votre ville doit contenir un minimum de ' . ENTRY_CITY_MIN_LENGTH . ' caractères.');
+define('ENTRY_CITY_ERROR', 'Votre ville doit contenir un minimum de ' . ENTRY_CITY_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_CITY_TEXT', '*');
-define('ENTRY_STATE', 'Etat/Département :');
-define('ENTRY_STATE_ERROR', 'Votre état doit contenir un minimum de ' . ENTRY_STATE_MIN_LENGTH . ' caractères.');
-define('ENTRY_STATE_ERROR_SELECT', 'Veuillez choisir un état à partir de la liste déroulante.');
+define('ENTRY_STATE', 'Etat/Dï¿½partement :');
+define('ENTRY_STATE_ERROR', 'Votre ï¿½tat doit contenir un minimum de ' . ENTRY_STATE_MIN_LENGTH . ' caractï¿½res.');
+define('ENTRY_STATE_ERROR_SELECT', 'Veuillez choisir un ï¿½tat ï¿½ partir de la liste dï¿½roulante.');
 define('ENTRY_STATE_TEXT', '*');
 define('ENTRY_COUNTRY', 'Pays :');
-define('ENTRY_COUNTRY_ERROR', 'Veuillez choisir un pays à partir de la liste déroulante.');
+define('ENTRY_COUNTRY_ERROR', 'Veuillez choisir un pays ï¿½ partir de la liste dï¿½roulante.');
 define('ENTRY_COUNTRY_TEXT', '*');
-define('ENTRY_TELEPHONE_NUMBER', 'Numéro de téléphone :');
-define('ENTRY_TELEPHONE_NUMBER_ERROR', 'Votre numéro de téléphone doit contenir un minimum de ' . ENTRY_TELEPHONE_MIN_LENGTH . ' caractères.');
+define('ENTRY_TELEPHONE_NUMBER', 'Numï¿½ro de tï¿½lï¿½phone :');
+define('ENTRY_TELEPHONE_NUMBER_ERROR', 'Votre numï¿½ro de tï¿½lï¿½phone doit contenir un minimum de ' . ENTRY_TELEPHONE_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_TELEPHONE_NUMBER_TEXT', '*');
-define('ENTRY_FAX_NUMBER', 'Numéro de fax :');
+define('ENTRY_FAX_NUMBER', 'Numï¿½ro de fax :');
 define('ENTRY_FAX_NUMBER_ERROR', '');
 define('ENTRY_FAX_NUMBER_TEXT', '');
 define('ENTRY_NEWSLETTER', 'Bulletin d\'information :');
@@ -225,39 +225,39 @@ define('ENTRY_NEWSLETTER_YES', 'S\'abonner');
 define('ENTRY_NEWSLETTER_NO', 'Ne pas s\'abonner');
 define('ENTRY_NEWSLETTER_ERROR', '');
 define('ENTRY_PASSWORD', 'Mot de passe :');
-define('ENTRY_PASSWORD_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractères.');
-define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit être identique à votre mot de passe.');
+define('ENTRY_PASSWORD_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractï¿½res.');
+define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit ï¿½tre identique ï¿½ votre mot de passe.');
 define('ENTRY_PASSWORD_TEXT', '*');
 define('ENTRY_PASSWORD_CONFIRMATION', 'Mot de passe de confirmation :');
 define('ENTRY_PASSWORD_CONFIRMATION_TEXT', '*');
 define('ENTRY_PASSWORD_CURRENT', 'Mot de passe actuel :');
 define('ENTRY_PASSWORD_CURRENT_TEXT', '*');
-define('ENTRY_PASSWORD_CURRENT_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractères.');
+define('ENTRY_PASSWORD_CURRENT_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractï¿½res.');
 define('ENTRY_PASSWORD_NEW', 'Nouveau mot de passe :');
 define('ENTRY_PASSWORD_NEW_TEXT', '*');
-define('ENTRY_PASSWORD_NEW_ERROR', 'Votre nouveau mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractères.');
-define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit être identique à votre nouveau mot de passe.');
+define('ENTRY_PASSWORD_NEW_ERROR', 'Votre nouveau mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caractï¿½res.');
+define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit ï¿½tre identique ï¿½ votre nouveau mot de passe.');
 define('PASSWORD_HIDDEN', '--CACHE--');
 
 define('FORM_REQUIRED_INFORMATION', '* Information requise');
 
 // constants for use in tep_prev_next_display function
-define('TEXT_RESULT_PAGE', 'Pages de résultat :');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> produits)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> orders)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> critiques)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> nouveaux produits)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> promotions)');
+define('TEXT_RESULT_PAGE', 'Pages de rï¿½sultat :');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> ï¿½ <b>%d</b> (sur <b>%d</b> produits)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> ï¿½ <b>%d</b> (sur <b>%d</b> orders)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> ï¿½ <b>%d</b> (sur <b>%d</b> critiques)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> ï¿½ <b>%d</b> (sur <b>%d</b> nouveaux produits)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> ï¿½ <b>%d</b> (sur <b>%d</b> promotions)');
 
-define('PREVNEXT_TITLE_FIRST_PAGE', 'Première page');
-define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'Page précédente');
+define('PREVNEXT_TITLE_FIRST_PAGE', 'Premiï¿½re page');
+define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'Page prï¿½cï¿½dente');
 define('PREVNEXT_TITLE_NEXT_PAGE', 'Page suivante');
-define('PREVNEXT_TITLE_LAST_PAGE', 'Dernière page');
+define('PREVNEXT_TITLE_LAST_PAGE', 'Derniï¿½re page');
 define('PREVNEXT_TITLE_PAGE_NO', 'Page %d');
-define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'Ensemble précédent de %d pages');
+define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'Ensemble prï¿½cï¿½dent de %d pages');
 define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', 'Ensemble suivant de %d pages');
 define('PREVNEXT_BUTTON_FIRST', '&lt;&lt;PREMIER');
-define('PREVNEXT_BUTTON_PREV', '[&lt;&lt;&nbsp;Préc]');
+define('PREVNEXT_BUTTON_PREV', '[&lt;&lt;&nbsp;Prï¿½c]');
 define('PREVNEXT_BUTTON_NEXT', '[Suiv&nbsp;&gt;&gt;]');
 define('PREVNEXT_BUTTON_LAST', 'DERNIER&gt;&gt;');
 
@@ -280,10 +280,10 @@ define('IMAGE_BUTTON_QUICK_FIND', 'Recherche rapide');
 define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les notifications');
 define('IMAGE_BUTTON_REVIEWS', 'Critiques');
 define('IMAGE_BUTTON_SEARCH', 'Rechercher');
-define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options d\'expédition');
-define('IMAGE_BUTTON_TELL_A_FRIEND', 'Envoyer à un ami');
-define('IMAGE_BUTTON_UPDATE', 'Mise à jour');
-define('IMAGE_BUTTON_UPDATE_CART', 'Mise à jour panier');
+define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options d\'expï¿½dition');
+define('IMAGE_BUTTON_TELL_A_FRIEND', 'Envoyer ï¿½ un ami');
+define('IMAGE_BUTTON_UPDATE', 'Mise ï¿½ jour');
+define('IMAGE_BUTTON_UPDATE_CART', 'Mise ï¿½ jour panier');
 define('IMAGE_BUTTON_WRITE_REVIEW', 'Ecrire une critique');
 
 define('SMALL_IMAGE_BUTTON_DELETE', 'Supprimer');
@@ -293,15 +293,15 @@ define('SMALL_IMAGE_BUTTON_VIEW', 'Afficher');
 define('ICON_ARROW_RIGHT', 'plus');
 define('ICON_CART', 'Dans le panier');
 define('ICON_ERROR', 'Erreur');
-define('ICON_SUCCESS', 'Réussi');
+define('ICON_SUCCESS', 'Rï¿½ussi');
 define('ICON_WARNING', 'Attention');
 
-define('TEXT_GREETING_PERSONAL', 'Bienvenue <span class="greetUser">%s!</span> Voudriez vous voir quels <a href="%s"><u>nouveaux produits</u></a> sont disponibles à la vente ?');
-define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Si vous n\'êtes pas %s, merci de vous <a href="%s"><u>reconnecter in</u></a> avec votre compte.</small>');
-define('TEXT_GREETING_GUEST', 'Bienvenue <span class="greetUser">visiteur!</span> Voulez vous <a href="%s"><u>ouvrir une session</u></a>? Ou préférez vous <a href="%s"><u>créer un compte</u></a> ?');
+define('TEXT_GREETING_PERSONAL', 'Bienvenue <span class="greetUser">%s!</span> Voudriez vous voir quels <a href="%s"><u>nouveaux produits</u></a> sont disponibles ï¿½ la vente ?');
+define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Si vous n\'ï¿½tes pas %s, merci de vous <a href="%s"><u>reconnecter in</u></a> avec votre compte.</small>');
+define('TEXT_GREETING_GUEST', 'Bienvenue <span class="greetUser">visiteur!</span> Voulez vous <a href="%s"><u>ouvrir une session</u></a>? Ou prï¿½fï¿½rez vous <a href="%s"><u>crï¿½er un compte</u></a> ?');
 
 define('TEXT_SORT_PRODUCTS', 'Trier produits ');
-define('TEXT_DESCENDINGLY', 'décroissant');
+define('TEXT_DESCENDINGLY', 'dï¿½croissant');
 define('TEXT_ASCENDINGLY', 'croissant');
 define('TEXT_BY', ' par ');
 
@@ -317,17 +317,17 @@ define('TEXT_UNKNOWN_TAX_RATE', 'Taux de taxation inconnu');
 
 define('TEXT_REQUIRED', '<span class="errorText">Requis</span>');
 
-define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><b><small>TEP ERROR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spécifié. Vérifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nécessaire.</b></font>');
-define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Attention : le répertoire d\'installation existe à : ' . dirname($HTTP_SERVER_VARS['SCRIPT_FILENAME']) . '/install. Veuillez supprimer ce répertoire pour des raisons de sécurité.');
-define('WARNING_CONFIG_FILE_WRITEABLE', 'Attention : Il est possible d\'écrire sur le fichier de configuration : ' . dirname($HTTP_SERVER_VARS['SCRIPT_FILENAME']) . '/includes/configure.php. Ceci est un risque potentiel - Mettez les bonnes permissions sur ce fichier.');
-define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'Attention : Le répertoire de session n\'existe pas : ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que ce répertoire n\'aura pas été créé.');
-define('WARNING_SESSION_DIRECTORY_NOT_WRITEABLE', 'Attention : Il est impossible d\'écrire dans le répertoire de sessions ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que les permissions n\'auront pas été corrigées.');
-define('WARNING_SESSION_AUTO_START', 'Attention : session.auto_start is enabled - désactiver cette fonctionnalité dans php.ini et redémarrer le serveur http.');
-define('WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT', 'Attention : Le répertoire de téléchargement n\'existe pas : ' . DIR_FS_DOWNLOAD . '. Le téléchargement de produits ne fonctionnera qu\'avec un répertoire valide.');
+define('ERROR_TEP_MAIL', '<font face="Verdana, Arial" size="2" color="#ff0000"><b><small>TEP ERROR:</small> Impossible d\'envoyer l\'email par le serveur SMTP spï¿½cifiï¿½. Vï¿½rifiez le fichier PHP.INI et corrigez le nom du serveur SMTP si nï¿½cessaire.</b></font>');
+define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Attention : le rï¿½pertoire d\'installation existe ï¿½ : ' . dirname($HTTP_SERVER_VARS['SCRIPT_FILENAME']) . '/install. Veuillez supprimer ce rï¿½pertoire pour des raisons de sï¿½curitï¿½.');
+define('WARNING_CONFIG_FILE_WRITEABLE', 'Attention : Il est possible d\'ï¿½crire sur le fichier de configuration : ' . dirname($HTTP_SERVER_VARS['SCRIPT_FILENAME']) . '/includes/configure.php. Ceci est un risque potentiel - Mettez les bonnes permissions sur ce fichier.');
+define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'Attention : Le rï¿½pertoire de session n\'existe pas : ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que ce rï¿½pertoire n\'aura pas ï¿½tï¿½ crï¿½ï¿½.');
+define('WARNING_SESSION_DIRECTORY_NOT_WRITEABLE', 'Attention : Il est impossible d\'ï¿½crire dans le rï¿½pertoire de sessions ' . tep_session_save_path() . '. Les sessions ne fonctionneront pas tant que les permissions n\'auront pas ï¿½tï¿½ corrigï¿½es.');
+define('WARNING_SESSION_AUTO_START', 'Attention : session.auto_start is enabled - dï¿½sactiver cette fonctionnalitï¿½ dans php.ini et redï¿½marrer le serveur http.');
+define('WARNING_DOWNLOAD_DIRECTORY_NON_EXISTENT', 'Attention : Le rï¿½pertoire de tï¿½lï¿½chargement n\'existe pas : ' . DIR_FS_DOWNLOAD . '. Le tï¿½lï¿½chargement de produits ne fonctionnera qu\'avec un rï¿½pertoire valide.');
 
-define('TEXT_CCVAL_ERROR_INVALID_DATE', 'La date d\'expiration entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier la date et réessayez.');
-define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Le numémero entrée pour cette carte de crédit n\'est pas valide. Veuillez vérifier le numéro et réessayez.');
-define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'Le code à 4 chiffres que vous avez entré est : %s. Si ce code est correct, nous n\'acceptons pas ce type de carte crédit. S\'il est erroné veuillez réessayer.');
+define('TEXT_CCVAL_ERROR_INVALID_DATE', 'La date d\'expiration entrï¿½e pour cette carte de crï¿½dit n\'est pas valide. Veuillez vï¿½rifier la date et rï¿½essayez.');
+define('TEXT_CCVAL_ERROR_INVALID_NUMBER', 'Le numï¿½mero entrï¿½e pour cette carte de crï¿½dit n\'est pas valide. Veuillez vï¿½rifier le numï¿½ro et rï¿½essayez.');
+define('TEXT_CCVAL_ERROR_UNKNOWN_CARD', 'Le code ï¿½ 4 chiffres que vous avez entrï¿½ est : %s. Si ce code est correct, nous n\'acceptons pas ce type de carte crï¿½dit. S\'il est erronï¿½ veuillez rï¿½essayer.');
 
 /*
   The following copyright announcement can only be
@@ -355,15 +355,15 @@ define('Nos_meilleurs_coffrets_m', 'Meilleurs coffrets Hommes');
 define('meilleurs_marques', 'Meilleures marques');
 define('Nos_marques', 'Nos Marques');
 define('minimum_order',  '<div align="center"><img src="images/wholesaleonly.jpg"></div>');
-define('BOX_SHOPPING_CART_MIN_ORDER', 'Commande minimum 150€');
+define('BOX_SHOPPING_CART_MIN_ORDER', 'Commande minimum 150&euro;');
 define('HEADER_HELLO', 'Bienvenue');
 define('HEADER_LOGIN', 'S\'identifier');
-define('HEADER_LOGOUT', 'Se déconnecter');
-define('CHOOSE_YOUR_CAT', 'Merci de cliquer sur la catégorie de votre choix : ');
+define('HEADER_LOGOUT', 'Se d&eacute;connecter');
+define('CHOOSE_YOUR_CAT', 'Merci de cliquer sur la cat&eacute;gorie de votre choix : ');
 define('CHOOSE_YOUR_BRAND', 'Merci de cliquer sur la marque de votre choix : ');
 
 
-define('TEXT_DISPLAY_NUMBER_OF_RANGES', 'Afficher <b>%d</b> à <b>%d</b> (sur <b>%d</b> gammes)');
+define('TEXT_DISPLAY_NUMBER_OF_RANGES', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> gammes)');
 define('TEXT_INSTEAD_OF', 'Au lieu de');
 define('TEXT_EN_STOCK', '<span class="en_stock">En Stock</span>');
 
@@ -373,7 +373,7 @@ define('MENU_FRAGRANCE_MEN', 'Parfums Homme');
 define('MENU_ALL_BRANDS', 'Toutes nos marques');
 define('MENU_MY_ACCOUNT', 'Mon compte');
 define('MENU_CHRISTMAS', 'Bons plans');
-define('MENU_MONTHLY', 'Spécial promos');
+define('MENU_MONTHLY', 'Sp&eacute;cial promos');
 define('MENU_SPONSORSHIP', 'Parrainage');
 define('MENU_CONTACT', 'Contact');
 define('MENU_FLASH', 'Vente Flash');
@@ -406,8 +406,8 @@ define('PRICE_ADDER', 19);
 define('YOUR_PROMO_CODE', 'Votre code cadeau :');
 define('ERROR_PRODUCT_REQUIRED', 'Vous devez avoir au moins un produit dans votre panier pour pouvoir utiliser ce code.');
 
-define('MENU_GIFT', 'Spécial du mois');
-define('MENU_VALENTIN', 'Bons plans');
+define('MENU_GIFT', 'Sp&eacute;cial du mois');
+define('MENU_VALENTIN', 'F&ecirc;te des m&egrave;re');
 
 define('IMAGE_BUTTON_CANCEL', 'Annuler');
 
@@ -421,5 +421,5 @@ define('NEWSLETTER_RETURN_ERROR', 'Une erreur c\'est produite, veuillez reessaye
 define('PAYEMENT_100_SECURE', 'paiement 100% securis&eacute;');
 
 define('OUR_MARQUES','Nos marques');
-define('CONTACT_SERVICE_CLIENT','Notre service client est ouvert de 7h à 12h  Lundi au Vendredi au 0970 465 068.');
+define('CONTACT_SERVICE_CLIENT','Notre service client est ouvert de 7h &agrave; 12h  Lundi au Vendredi au 0970 465 068.');
 ?>
