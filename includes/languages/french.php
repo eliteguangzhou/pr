@@ -406,7 +406,7 @@ define('PRICE_ADDER', 19);
 define('YOUR_PROMO_CODE', 'Votre code cadeau :');
 define('ERROR_PRODUCT_REQUIRED', 'Vous devez avoir au moins un produit dans votre panier pour pouvoir utiliser ce code.');
 
-define('MENU_GIFT', 'Sp&eacute;cial du mois');
+define('MENU_GIFT', 'Sp&eacute;cial du mois'); 
 define('MENU_VALENTIN', 'F&ecirc;te des m&egrave;re');
 
 define('IMAGE_BUTTON_CANCEL', 'Annuler');
