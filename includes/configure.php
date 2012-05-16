@@ -31,7 +31,7 @@
   define('DIR_WS_PWS_IMAGE', 'http://www.parfumwholesale.com/images/');
 
   define('DIR_WS_DOWNLOAD_PUBLIC', 'pub/');
-  define('DIR_FS_CATALOG', '/var/www/vhost/parfumreduc/');
+  define('DIR_FS_CATALOG', '/var/www/vhost/parfumreduction/');
   define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');
   define('DIR_FS_DOWNLOAD_PUBLIC', DIR_FS_CATALOG . 'pub/');
 
