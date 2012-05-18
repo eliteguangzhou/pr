@@ -136,7 +136,7 @@ define('BOX_INFORMATION_TRACK', 'Suivi des commandes');
 define('BOX_INFORMATION_FAQ', 'FAQ');
 
 // tell a friend box text in includes/boxes/tell_a_friend.php
-define('BOX_HEADING_TELL_A_FRIEND', 'Faire conna&icric;tre');
+define('BOX_HEADING_TELL_A_FRIEND', 'Faire conna&icirc;tre');
 define('BOX_TELL_A_FRIEND_TEXT', 'Envoyer cet article &agrave; un ami(e).');
 
 // checkout procedure text

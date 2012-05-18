@@ -590,3 +590,15 @@ table#sponsorship_list td{padding:3px;}
   right:0;
   background:transparent url(http://parfumreduc.localhost.com/includes/languages/french/images/box_corn_r.gif) no-repeat 0 0;
 }
+
+.product_zoom {
+	padding-right: 10px;
+	padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+	}
+	
+.product_zoom:hover{
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px black;
+}
