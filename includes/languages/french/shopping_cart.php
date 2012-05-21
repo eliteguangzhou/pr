@@ -54,7 +54,7 @@ define('MIN_PRODUCTS', '<span class="min_products">Veuillez ajouter un produit d
 define('SPECIAL_PROMO', '<br /><b>Tableau des offres en cours :</b><br />
 <table cellpadding="2" cellspacing="0" class="special_promo" style="text-align:center;margin:5px 0;width:370px;" align="center" border="1">
 <tr class="header" style="font-weight:bold;">
-  <td>Nbr produits<br />achet&eacute;s</td><td>Frais de port</td><td>R&egrave;duction<br />imm&eacute;diate</td>
+  <td>Nbr produits<br />achet&eacute;s</td><td>Frais de port</td><td>R&eacute;duction<br />imm&eacute;diate</td>
 </tr>%s</table>
 ');
 
