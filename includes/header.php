@@ -68,6 +68,7 @@
 <!-- start -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="includes/animation.js"></script>
+<script type="text/javascript" src="includes/zoom.js"></script>
 <table cellpadding="0" cellspacing="0" border="0" style="width:980px" align="center">
 	<tr>
 		<td>

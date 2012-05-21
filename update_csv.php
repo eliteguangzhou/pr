@@ -274,8 +274,7 @@ define('PRICE_US' ,14);
         'products_model as EAN',
         '14 as frais_port',
     );
-
-    $query = tep_db_query("
+    $sql = "
         SELECT ".str_replace('products_name', 'CONCAT(products_name, " ", products_model)',
                 str_replace('products_image', "CONCAT('http://www.parfumwholesale.com/images/', products_image)",
                 str_replace('pd.products_id', "CONCAT('http://www.parfumreduc.com/product_info.php?products_id=', pd.products_id)",
@@ -286,7 +285,11 @@ define('PRICE_US' ,14);
         and p.products_status = 1
         and p.products_quantity > 0
         and m.manufacturers_id = p.manufacturers_id
-		and p.type in ('Fragrances', 'Gift Sets', 'Gift Set')");
+		and p.type in ('Fragrances', 'Gift Sets', 'Gift Set')";
+    $sql = str_replace("\n",' ',$sql);
+    $sql = str_replace("\t",' ',$sql);
+    $query = tep_db_query($sql);
+    error_log('-----'.$sql);
     $datas = '"'.str_replace('products_model as EAN', 'EAN', str_replace('14 as frais_port', 'frais_port', join('";"', $fields))).'"';
     while ($data = tep_db_fetch_array($query)) {
         $data['products_price'] = round($currencies->currencies[$currency]['value']*$data['products_price']*100)/100;

@@ -9,6 +9,8 @@
   Released under the GNU General Public License
 */
 
+alert('sdfsaf');
+
 function SetFocus(TargetFormName) {
   var target = 0;
   if (TargetFormName != "") {
