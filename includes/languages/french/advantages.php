@@ -13,5 +13,5 @@ Plus vous ajoutez des produits dans votre panier, plus nous vous offrons des r&e
 <li>Si vous achetez 6 produits vous b&eacute;n&eacute;ficiez de 50  euros de r&eacute;duction imm&eacute;diatement</li>
 </ul>
 </span>
-');
+'); 
 ?>
