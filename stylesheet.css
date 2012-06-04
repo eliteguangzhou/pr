@@ -314,6 +314,7 @@ div.padd3						{text-align:left; padding-top:0px; margin-left:0px; margin-right:
 /* -------------------------------------------------          -------------------------------------------------------- */
 .box_width_left			{ }
 .box_width_right		{ width:188px;}
+
 .box_width_cont			{ width:100%;}
 .col_left				{}
 .col_center				{ width:100%;}
@@ -553,7 +554,7 @@ table#sponsorship_list td{padding:3px;}
 
 /* partnaire box */
 #partnair_cont,#partnair_cont_sup{
-      width: 180px;
+      width: 179px;
   height: 345px;
   border-bottom: 1px solid black;
 /*   position: relative; */
@@ -562,11 +563,15 @@ table#sponsorship_list td{padding:3px;}
 }
 
 .picture_partnaire{
-          width: 180px;
+          width: 179px;
   height: 69px;
   position: relative;
 /*   overflow: hidden; */
   margin: 0 auto;
+}
+
+.picture_partnaire img{
+          width: 179px;
 }
 
 /**
