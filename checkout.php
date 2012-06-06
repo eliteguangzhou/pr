@@ -38,7 +38,7 @@ $address_count = 0;
 if ($cart->count_contents() < 1) {
 	tep_redirect(tep_href_link(FILENAME_SHOPPING_CART));
 }
- 
+
 //---------------LOGIN--------------------//
 
 if (isset($HTTP_GET_VARS['action']) && ($HTTP_GET_VARS['action'] == 'process')) {
@@ -79,7 +79,7 @@ if (isset($HTTP_GET_VARS['action']) && ($HTTP_GET_VARS['action'] == 'process')) 
 			tep_db_query("update " . TABLE_CUSTOMERS_INFO . " set customers_info_date_of_last_logon = now(), customers_info_number_of_logons = customers_info_number_of_logons+1 where customers_info_id = '" . (int)$customer_id . "'");
 
 			// restore cart contents
-			$cart->restore_contents();
+			//$cart->restore_contents();
 
 			if (sizeof($navigation->snapshot) > 0) {
 				$origin_href = tep_href_link($navigation->snapshot['page'], tep_array_to_string($navigation->snapshot['get'], array(tep_session_name())), $navigation->snapshot['mode']);
@@ -479,7 +479,7 @@ if (!empty($HTTP_POST_VARS)) {
 		}
 
 		if (ACCOUNT_STATE == 'true') {
-			 
+
 			$zone_id = 0;
 			$check_query = tep_db_query("select count(*) as total from " . TABLE_ZONES . " where zone_country_id = '" . (int)$country . "'");
 			$check = tep_db_fetch_array($check_query);
@@ -542,7 +542,7 @@ if (!empty($HTTP_POST_VARS)) {
 				$messageStack->add('checkout_payment', ENTRY_SHIP_GENDER_ERROR);
 			}
 		}
-		 
+			
 		if (strlen($ship_firstname) < ENTRY_FIRST_NAME_MIN_LENGTH) {
 			$error = true;
 
@@ -868,7 +868,7 @@ if (!empty($HTTP_POST_VARS)) {
 				$address_id = tep_db_insert_id();
 				$sendto = $address_id;
 
-				 
+					
 				$check_address_query = tep_db_query("select count(*) as total from " . TABLE_ADDRESS_BOOK . " where customers_id = '" . (int)$customer_id . "' and address_book_id = '" . (int)$sendto . "'");
 				$check_address = tep_db_fetch_array($check_address_query);
 
@@ -881,8 +881,8 @@ if (!empty($HTTP_POST_VARS)) {
 
 
 			}
-			 
-			 
+
+
 			else{
 
 				if (isset($HTTP_POST_VARS['ship_address'])  ) {
@@ -890,7 +890,7 @@ if (!empty($HTTP_POST_VARS)) {
 					if (tep_session_is_registered('sendto')) {
 						if ($sendto != $HTTP_POST_VARS['ship_address']) {
 							if (tep_session_is_registered('ship_address')) {
-								 
+									
 								$reset_shipping = true;
 							}
 						}
@@ -901,7 +901,7 @@ if (!empty($HTTP_POST_VARS)) {
 					if (!tep_session_is_registered('sendto')) tep_session_register('sendto');
 					$sendto = $HTTP_POST_VARS['ship_address'];
 
-					 
+
 					$check_address_query = tep_db_query("select count(*) as total from " . TABLE_ADDRESS_BOOK . " where customers_id = '" . (int)$customer_id . "' and address_book_id = '" . (int)$sendto . "'");
 					$check_address = tep_db_fetch_array($check_address_query);
 
@@ -939,7 +939,7 @@ if (!empty($HTTP_POST_VARS)) {
 				 }
 				 }*/
 
-				 
+					
 			}
 		} // ship_same if ends
 		else{
@@ -950,7 +950,7 @@ if (!empty($HTTP_POST_VARS)) {
 			//exit;
 
 		}
-		 
+			
 
 		//-------------end of new shipping address-------------//
 
@@ -1276,8 +1276,8 @@ if (!empty($HTTP_POST_VARS)) {
 		 //print_r($url_val[1]);
 		 $form_action_url = "checkout_confirmation.php?".$url_val[1];
 		 }*/
-		 
-		 
+			
+			
 
 		$url_val = $_SERVER['REQUEST_URI'];
 		$url_val = explode('?',$url_val);
@@ -2557,11 +2557,6 @@ function toggle_ship_new(addr){
 										</tr>
 
 										<!-----------------confirmation end--------------------------->
-
-
-
-
-
 										<tr>
 											<td><?php   echo tep_image_submit('button_confirm_order.gif', IMAGE_BUTTON_CONFIRM_ORDER) . "\n"; ?>
 											</td>
@@ -2573,13 +2568,6 @@ function toggle_ship_new(addr){
 									</form>
 								</td>
 							</tr>
-
-
-
-
-
-
-
 						</table></td>
 					<!-- body_text_eof //-->
 					<td width="<?php echo BOX_WIDTH; ?>" valign="top"><div
