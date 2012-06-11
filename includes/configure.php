@@ -31,13 +31,13 @@
   define('DIR_WS_PWS_IMAGE', 'http://www.parfumwholesale.com/images/');
 
   define('DIR_WS_DOWNLOAD_PUBLIC', 'pub/');
-  define('DIR_FS_CATALOG', '/var/www/vhost/parfumreduc/');
+  define('DIR_FS_CATALOG', 'C:/myapps/pr/');
   define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');
   define('DIR_FS_DOWNLOAD_PUBLIC', DIR_FS_CATALOG . 'pub/');
 
-  define('DB_SERVER', 'localhost');
-  define('DB_SERVER_USERNAME', 'root');
-  define('DB_SERVER_PASSWORD', 'hahaha');
+  define('DB_SERVER', '192.168.1.31');
+  define('DB_SERVER_USERNAME', 'pr');
+  define('DB_SERVER_PASSWORD', 'pr123');
   define('DB_DATABASE', 'pr');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'mysql');
