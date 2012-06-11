@@ -89,7 +89,7 @@ table, td, .main, select, input, textarea {
 img      {border:0px;}
 table	 {width:100%;}
 
-.vam { vertical-align:middle}
+
 .header td.shipCart{ padding-right : 25px; color:white; }
 .header td.shipCart a {color:white;}
 .bg{background:url(images/bg_line.gif)}
@@ -308,7 +308,7 @@ td.padd2 	{padding:8px; padding-left:4px;}
 
 .line_h		{line-height:16px;}
 /* -------------------------------------------------          -------------------------------------------------------- */
-.product div					{padding:8px 0px 5px 0px;}
+// .product div					{padding:8px 0px 5px 0px;}
 div.padd3						{text-align:left; padding-top:0px; margin-left:0px; margin-right:0px;}
 .padd33 img, .padd33 input 		{margin:1px;}
 /* -------------------------------------------------          -------------------------------------------------------- */
@@ -594,4 +594,41 @@ table#sponsorship_list td{padding:3px;}
   top:0;
   right:0;
   background:transparent url(http://parfumreduc.localhost.com/includes/languages/french/images/box_corn_r.gif) no-repeat 0 0;
+}
+
+.product_zoom {
+	padding-right: 10px;
+	padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+	}
+	
+.product_zoom:hover{
+	box-shadow: 0px 0px 20px black; 
+		border-radius: 15px;
+}
+
+.zoom {
+	z-index:50;
+		padding-right: 10px;
+	padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+	background:white;
+	position:absolute;
+		border-radius: 15px;
+	box-shadow: 0px 0px 20px black; 
+}
+
+
+.zoom .instead_of { 
+	font-size:1.1em;
+}
+
+.zoom .vam span{ 
+	font-size:1.1em;
+}
+
+.zoom .vam span a{ 
+	font-size:1.1em;
 }

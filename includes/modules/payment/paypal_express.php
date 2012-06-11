@@ -36,7 +36,6 @@
 // class methods
     function update_status() {
       global $order;
-
       if ( ($this->enabled == true) && ((int)MODULE_PAYMENT_PAYPAL_EXPRESS_ZONE > 0) ) {
         $check_flag = false;
         $check_query = tep_db_query("select zone_id from " . TABLE_ZONES_TO_GEO_ZONES . " where geo_zone_id = '" . MODULE_PAYMENT_PAYPAL_EXPRESS_ZONE . "' and zone_country_id = '" . $order->delivery['country']['id'] . "' order by zone_id");
@@ -49,7 +48,6 @@
             break;
           }
         }
-
         if ($check_flag == false) {
           $this->enabled = false;
         }
@@ -86,6 +84,7 @@
     }
 
     function confirmation() {
+    	
       global $comments;
 
       if (!isset($comments)) {
@@ -107,6 +106,7 @@
     }
 
     function before_process() {
+    	
       global $order, $sendto, $ppe_token, $ppe_payerid, $HTTP_POST_VARS, $comments, $easy_discount, $nb_products_discount, $check_server;
 
       if (empty($comments)) {
@@ -165,9 +165,10 @@
   	  }
 
   	  $lasti++;
-
+  	  
   	  //Frais port
       $params['L_NAME'.$lasti]    = 'Port';
+      error_log('--------'.$this->format_raw($order->info['shipping_cost']));
       $params['L_AMT'.$lasti]     = $this->format_raw($order->info['shipping_cost']);
       $params['ITEMAMT']           += $params['L_AMT'.$lasti];
       $params['AMT']               += $params['L_AMT'.$lasti];
@@ -206,6 +207,7 @@
     }
 
     function after_process() {
+    	
       tep_session_unregister('ppe_token');
       tep_session_unregister('ppe_payerid');
     }
@@ -215,6 +217,7 @@
     }
 
     function check() {
+    	
       if (!isset($this->_check)) {
         $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_PAYMENT_PAYPAL_EXPRESS_STATUS'");
         $this->_check = tep_db_num_rows($check_query);
@@ -268,9 +271,7 @@
         curl_setopt($curl, CURLOPT_FRESH_CONNECT, 1);
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $parameters);
-
         $result = curl_exec($curl);
-
         curl_close($curl);
       } else {
         exec(escapeshellarg(MODULE_PAYMENT_PAYPAL_EXPRESS_CURL) . ' -d ' . escapeshellarg($parameters) . ' "' . $server['scheme'] . '://' . $server['host'] . $server['path'] . (isset($server['query']) ? '?' . $server['query'] : '') . '" -P ' . $server['port'] . ' -k', $result);

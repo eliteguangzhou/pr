@@ -136,7 +136,7 @@ define('BOX_INFORMATION_TRACK', 'Suivi des commandes');
 define('BOX_INFORMATION_FAQ', 'FAQ');
 
 // tell a friend box text in includes/boxes/tell_a_friend.php
-define('BOX_HEADING_TELL_A_FRIEND', 'Faire conna&icric;tre');
+define('BOX_HEADING_TELL_A_FRIEND', 'Faire conna&icirc;tre');
 define('BOX_TELL_A_FRIEND_TEXT', 'Envoyer cet article &agrave; un ami(e).');
 
 // checkout procedure text
@@ -407,7 +407,7 @@ define('YOUR_PROMO_CODE', 'Votre code cadeau :');
 define('ERROR_PRODUCT_REQUIRED', 'Vous devez avoir au moins un produit dans votre panier pour pouvoir utiliser ce code.');
 
 define('MENU_GIFT', 'Sp&eacute;cial du mois'); 
-define('MENU_VALENTIN', 'F&ecirc;te des m&egrave;res');
+define('MENU_VALENTIN', 'F&ecirc;te des p&egrave;res');
 
 define('IMAGE_BUTTON_CANCEL', 'Annuler');
 

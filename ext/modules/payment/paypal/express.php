@@ -331,8 +331,13 @@
       }
     }
 
+    $fp = (float) $paypal_express->format_raw($order->info['shipping_cost']);
+    if (substr($fp,-1) == 1){
+    	$fp -= 0.01;
+    }
+    
     $params['L_NAME'.$lasti]    = 'Port';
-    $params['L_AMT'.$lasti]     = (float) $paypal_express->format_raw($order->info['shipping_cost']);
+    $params['L_AMT'.$lasti]     = $fp;
     $params['ITEMAMT']           += $params['L_AMT'.$lasti];
     $params['AMT']               += $params['L_AMT'.$lasti];
 
@@ -348,7 +353,7 @@
     foreach ($params as $key => $value) {
       $post_string .= $key . '=' . urlencode(trim($value)) . '&';
     }
-      
+    
     $post_string = substr($post_string, 0, -1);
     $response = $paypal_express->sendTransactionToGateway($api_url, $post_string);
     $response_array = array();

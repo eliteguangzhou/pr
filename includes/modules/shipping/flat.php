@@ -17,7 +17,7 @@
     function flat() {
       global $order,$easy_discount;
 
-      $this->code = 'flat';
+      $this->code = 'flat'; 
       $this->title = MODULE_SHIPPING_FLAT_TEXT_TITLE;
       $this->description = MODULE_SHIPPING_FLAT_TEXT_DESCRIPTION;
       $this->sort_order = MODULE_SHIPPING_FLAT_SORT_ORDER;
@@ -26,8 +26,9 @@
       $this->enabled = ((MODULE_SHIPPING_FLAT_STATUS == 'true') ? true : false);// la valeur de test 'true' ou 'false' est convertie dans application_top depuis 'Oui' ou 'Non' ! laisser le test sur la valeur 'true'
 	  
       $this->values = array(
-		1 => 7,
-		
+		1 => 14,
+		2 => 7,
+		3 => 5
 	  );
 	  
 	  /*$discounts = $easy_discount->get_all();
