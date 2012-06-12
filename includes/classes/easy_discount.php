@@ -56,6 +56,9 @@
     function recalculate() {
     	global $cart;
     	$total = $cart->count_contents(false);
+          	if (!$cart->in_cart('gift_reduc_999999') && $cart->count_contents(false) != 0){
+       	$cart->add_cart(999999, 1, '', false, 'reduc');
+      }
     	reset($this->discounts);
     	while (list($type, $infos) = each($this->discounts)) {
     		if ($infos['type'] == 'p') {
