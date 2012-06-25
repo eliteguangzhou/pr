@@ -373,7 +373,7 @@ define('MENU_FRAGRANCE_MEN', 'Parfums Homme');
 define('MENU_ALL_BRANDS', 'Toutes nos marques');
 define('MENU_MY_ACCOUNT', 'Mon compte');
 define('MENU_CHRISTMAS', 'Bons plans');
-define('MENU_MONTHLY', 'Sp&eacute;cial promos');
+define('MENU_MONTHLY', 'Soldes');
 define('MENU_SPONSORSHIP', 'Parrainage');
 define('MENU_CONTACT', 'Contact');
 define('MENU_FLASH', 'Vente Flash');

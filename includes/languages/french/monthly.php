@@ -10,6 +10,6 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Spécial promos');
-define('HEADING_TITLE', 'Spécial promos !');
+define('NAVBAR_TITLE', 'Soldes');
+define('HEADING_TITLE', 'Soldes');
 ?>
