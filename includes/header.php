@@ -188,10 +188,10 @@
                                           <?php echo MENU_GIFT?></a> -->
                                   </td>
                                 <?php } ?>
-                                <td>
-                                    <a style="color:red;font-weight:bold;" class="menu_top1" href="<?php echo tep_href_link(FILENAME_VALENTIN)?>">
-                                        <?php echo MENU_VALENTIN;?></a>
-                                </td>
+                               <!-- <td>
+                                    <a style="color:red;font-weight:bold;" class="menu_top1" href="<?php //echo tep_href_link(FILENAME_VALENTIN)?>">
+                                        <?php //echo MENU_VALENTIN;?></a>
+                                </td> -->
                                 <td>
                                     <a class="menu_top1" href="<?php echo tep_href_link(FILENAME_FLASH)?>">
                                         <?php echo MENU_FLASH?></a>
