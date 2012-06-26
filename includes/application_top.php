@@ -603,8 +603,8 @@ $nb_products_discount = new nb_products_discount();
 
 // auto expire special products
   require(DIR_WS_FUNCTIONS . 'specials.php');
+error_log(DIR_WS_FUNCTIONS . 'specials.php');
   tep_expire_specials();
-
 // calculate category path
   if (isset($HTTP_GET_VARS['cPath'])) {
     $cPath = $HTTP_GET_VARS['cPath'];

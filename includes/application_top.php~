@@ -13,7 +13,7 @@
 // start the timer for the page parse time log
   define('PAGE_PARSE_START_TIME', microtime());
   error_reporting(E_ALL);
-set the level of error reporting
+// set the level of error reporting
  ini_set('display_errors', true);
   error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
   error_reporting(1);
@@ -603,8 +603,8 @@ $nb_products_discount = new nb_products_discount();
 
 // auto expire special products
   require(DIR_WS_FUNCTIONS . 'specials.php');
+error_log('++++++*');
   tep_expire_specials();
-
 // calculate category path
   if (isset($HTTP_GET_VARS['cPath'])) {
     $cPath = $HTTP_GET_VARS['cPath'];

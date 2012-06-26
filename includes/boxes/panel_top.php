@@ -48,8 +48,13 @@ if ($check_server != 'en') {
             echo tep_image(DIR_WS_IMAGES.'p'.$cat.'.jpg');
         elseif (!empty($cat) && in_array($cat, array(28, '38_27', '38_28')))
             echo tep_image(DIR_WS_IMAGES.'p'.$cat.'.jpg');*/
+if ($_SERVER["REQUEST_URI"] == '/'.FILENAME_MONTHLY){
+    echo '<a id="picture_sw" href="'.tep_href_link(FILENAME_ADVANTAGES).'">'.tep_image(DIR_WS_IMAGES.'ysl2.jpg').'</a>';
+}   
+else {
     echo '<a id="picture_sw" href="'.tep_href_link(FILENAME_ADVANTAGES).'">'.tep_image(DIR_WS_IMAGES.'ysl.jpg').'</a>';
-	echo '</td></tr><tr><td height="9">'.tep_draw_separator('spacer.gif', '1', '1').'</td></tr></table>';
+}
+echo '</td></tr><tr><td height="9">'.tep_draw_separator('spacer.gif', '1', '1').'</td></tr></table>';
 
     ?>
     <!-- </td></tr><tr><td height="9"><?php echo tep_draw_separator('spacer.gif', '1', '1'); ?></td></tr></table>-->
