@@ -22,7 +22,184 @@
   $breadcrumb->add(NAVBAR_TITLE_1, tep_href_link(FILENAME_ACCOUNT, '', 'SSL'));
   $breadcrumb->add(NAVBAR_TITLE_2, tep_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL'));
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<title><?php echo TITLE; ?></title>
+<base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<?php require_once(DIR_WS_INCLUDES.'head.php'); ?>
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
+
+<!-- body //-->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+  	<td class="col_left">
+<!-- left_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
+<!-- left_navigation_eof //-->
+	</td>
+<!-- body_text //-->
+    <td width="100%" class="col_center">
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+		<tr><td>
+
+<?php tep_draw_heading_top(901);?>
+
+<?php //new contentBoxHeading_ProdNew($info_box_contents);?>
+
+<?php tep_draw_heading_top_1();?>
+
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+				  <tr>
+					<td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+				  </tr>
+				  <tr>
+					<td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+					  <tr>
+						<td class="main">
+						<?php
+// print_r(isset($_GET));
+if (!isset($HTTP_GET_VARS['ticket_id'])) { ?>
+          <table border="0" summary="" width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+              <td class="main" width="80%"><?php echo TITLE_TICKET_NAME; ?></td>
+              <td class="main"  width="20%"><?php echo TITLE_TICKET_STATUS; ?></td>
+            </tr>
+          </table>
+          <?php 
+  $sql = "SELECT * 
+FROM  `ticket` 
+INNER join status_ticket on status_ticket.id = status
+WHERE  `customer_id` = ".$_SESSION['customer_id'];
+
+$sql = 'SELECT `ticket`.*, status_ticket.values,  count(ticket_message.id) as count FROM `ticket` 
+join status_ticket on status_ticket.id = `ticket`.status 
+LEFT OUTER JOIN ticket_message ON (ticket_message.ticket_id = ticket.id AND ticket_message.status = 0)
+WHERE `customer_id` = '.$_SESSION['customer_id'].' 
+ group by ticket.id';
+$res = tep_db_query($sql);
+$test = TRUE;
+$return_file = FILENAME_ACCOUNT;
+while ($r =  tep_db_fetch_array($res)) {
+  $test = FALSE;
+?>
+          <table border="0" summary="" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
+            <tr class="infoBoxContents">
+              <td><table border="0" summary="" width="100%" cellspacing="2" cellpadding="4">
+                <tr>
+                  <td class="main <?php if ($r['count'] == 0)echo "black_c";?>" width="80%" valign="top"><a href="<?php echo FILENAME_MY_TICKET;?>?ticket_id=<?php echo $r['id'];?>"><?php echo $r['title'];?>
+                  <?php 
+                  //show how many unread message there is on this tickets
+                  if ($r['count'] > 0){
+// 		  echo NEW_MESSAGES;
+		  echo '<span class="new_message">('.$r['count'].' '.NEW_MESSAGES.')</span>';
+                  }
+                  ?>                  
+                  </a>
+                  </td>
+                  <td class="main" width="20%"><?php echo $tmp[$r['values']];?></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+          <table border="0" summary="" width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+              <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
+            </tr>
+          </table>
+<?php
+}
+  if ($test) {
+?>
+          <table border="0" summary="" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
+            <tr class="infoBoxContents">
+              <td><table border="0" summary="" width="100%" cellspacing="2" cellpadding="4">
+                <tr>
+                  <td class="main"><?php echo TEXT_NO_TICKETS; ?></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+<?php
+  }
+ } //end of the test if there is a specific ticket
+ else {
+     $tid = $HTTP_GET_VARS['ticket_id'];
+     $sql = "SELECT * 
+FROM  `ticket_message` 
+WHERE  `ticket_id` = ".$tid;
+$res = tep_db_query($sql);
+ $return_file = FILENAME_MY_TICKET;
+ while ($r =  tep_db_fetch_array($res)) {
+?>
+<table border="0" summary="" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
+            <tr class="infoBoxContents">
+              <td><table border="0" summary="" width="100%" cellspacing="2" cellpadding="4">
+                <tr class="<?php if ($r['status'] == 0) { echo 't_message_unread'; } ?>">
+                  <td class="main " width="20%" valign="top"><?php echo $r['from'].'<br/>'.$r['date_creation'];?>                
+                  </a>
+                  </td>
+                  <td class="main" width="80%"><?php echo $r['message'];?></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+          <table border="0" summary="" width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+              <td><?php echo tep_draw_separator('pixel_trans.gif', '1', '10'); ?></td>
+            </tr>
+          </table>
+
+<?php } }?>
+						</td>
+					  </tr>
+					</table></td>
+				  </tr>
+				  <tr>
+					<td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+				  </tr>
+	  </table>
+
+
+<?php tep_draw_heading_bottom_1();?>
+
+<?php tep_draw_heading_bottom();?>
+
+			</td></tr>
+		</table>
+	</form></td>
+
+<!-- body_text_eof //-->
+    <td class="col_right">
+<!-- right_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
+<!-- right_navigation_eof //-->
+    </td>
+  </tr>
+</table>
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+<img width="0" height="0" src="http://ext.trackingwiz.com/Aspx/pixel.aspx?tpid=i10930e0c"/>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+
+
+
+
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
@@ -80,6 +257,7 @@ join status_ticket on status_ticket.id = `ticket`.status
 LEFT OUTER JOIN ticket_message ON (ticket_message.ticket_id = ticket.id AND ticket_message.status = 0)
 WHERE `customer_id` = '.$_SESSION['customer_id'].' 
  group by ticket.id';
+ 
 $res = tep_db_query($sql);
 $test = TRUE;
 $return_file = FILENAME_ACCOUNT;
@@ -189,4 +367,4 @@ $res = tep_db_query($sql);
 <br>
 </body>
 </html>
-<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>-->
