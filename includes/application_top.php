@@ -16,7 +16,7 @@
 // set the level of error reporting
 //  ini_set('display_errors', true);
   error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-  error_reporting(1);
+//   error_reporting(1);
 // check support for register_globals
   if (function_exists('ini_get') && (ini_get('register_globals') == false) && (PHP_VERSION < 4.3) ) {
     exit('Server Requirement Error: register_globals is disabled in your PHP configuration. This can be enabled in your php.ini configuration file or in the .htaccess file in your catalog directory. Please use PHP 4.3+ if register_globals cannot be enabled on the server.');
@@ -422,6 +422,10 @@ $nb_products_discount = new nb_products_discount();
 
     $language = $lng->language['directory'];
     $languages_id = $lng->language['id'];
+  }
+  if (!isset($language)){
+  $language = 'french';
+    $languages_id = 5;
   }
 
     //Ajout clement : images dans les repertoires de langues
