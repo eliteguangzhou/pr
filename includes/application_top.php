@@ -14,7 +14,7 @@
   define('PAGE_PARSE_START_TIME', microtime());
   error_reporting(E_ALL);
 // set the level of error reporting
- ini_set('display_errors', true);
+//  ini_set('display_errors', true);
   error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
   error_reporting(1);
 // check support for register_globals
@@ -91,7 +91,7 @@
     $check_server = 'fr';
   elseif (preg_match("/50.62.1.192/", $_SERVER['SERVER_NAME']) || preg_match("/50.62.12.1/", $_SERVER['SERVER_NAME']))
     $check_server = 'fr';
-  else die('Site en maintenance');
+  else  $check_server = 'fr';//die('Site en maintenance');
 
   $paypal_lang = 'fr_FR';
   while ($configuration = tep_db_fetch_array($configuration_query)) {

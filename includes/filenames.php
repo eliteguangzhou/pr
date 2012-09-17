@@ -89,4 +89,6 @@
   define('FILENAME_BECOME_MEMBER','become_member.php');
   define('FILENAME_CHECKOUT', 'checkout.php');
   define('FILENAME_PRESENTATION','presentation.php');
+  
+  define('FILENAME_MY_TICKET','my_ticket.php');
 ?>
