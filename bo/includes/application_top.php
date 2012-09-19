@@ -14,8 +14,8 @@
   define('PAGE_PARSE_START_TIME', microtime());
 
 // Set the level of error reporting
-  //error_reporting(E_ALL & ~E_NOTICE);
-  error_reporting(0);
+  error_reporting(E_ALL & ~E_NOTICE);
+//   error_reporting(0);
 
 // check support for register_globals
   if (function_exists('ini_get') && (ini_get('register_globals') == false) && (PHP_VERSION < 4.3) ) {
@@ -136,6 +136,10 @@
     $language = $lng->language['directory'];
     $languages_id = $lng->language['id'];
   }
+  if (!isset($languages_id)){
+  $languages_id = 5;
+  $language='french';
+}
 
 // redirect to login page if administrator is not yet logged in
   if (!tep_session_is_registered('admin')) {
