@@ -17,11 +17,11 @@
   define('HTTP_CATALOG_SERVER', 'http://'.$_SERVER['SERVER_NAME']);
   define('HTTPS_CATALOG_SERVER', 'http://'.$_SERVER['SERVER_NAME']);
   define('ENABLE_SSL_CATALOG', 'false');
-  define('DIR_FS_DOCUMENT_ROOT', '/home/tidjean/elite/parfumreduc/');
+  define('DIR_FS_DOCUMENT_ROOT', '/home/tidjean/elite/pr/');
   define('DIR_WS_ADMIN', '/bo/');
-  define('DIR_FS_ADMIN', '/home/tidjean/elite/parfumreduc/bo/');
+  define('DIR_FS_ADMIN', '/home/tidjean/elite/pr/bo/');
   define('DIR_WS_CATALOG', '/');
-  define('DIR_FS_CATALOG', '/home/tidjean/elite/parfumreduc/');
+  define('DIR_FS_CATALOG', '/home/tidjean/elite/pr/');
   define('DIR_WS_IMAGES', 'images/');
   define('DIR_WS_ICONS', DIR_WS_IMAGES . 'icons/');
   define('DIR_WS_CATALOG_IMAGES', DIR_WS_CATALOG . 'images/');
