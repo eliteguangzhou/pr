@@ -429,7 +429,7 @@ $nb_products_discount = new nb_products_discount();
     $languages_id = $lng->language['id'];
   }
 
-if (!isset($languages_id)){
+if (!isset($language) || $language == '' || $language == null){
   $languages_id = 5;
   $language='french';
 }

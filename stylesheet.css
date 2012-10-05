@@ -632,3 +632,13 @@ padding-bottom: 5px;
 .zoom .vam span a{ 
 	font-size:1.1em;
 }
+
+
+.t_message_unread{
+ background-color:pink; 
+}
+
+.header a.new_message{
+ font-size: 16px; 
+ color: #FF0202;
+}

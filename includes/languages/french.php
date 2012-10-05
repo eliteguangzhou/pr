@@ -422,4 +422,6 @@ define('PAYEMENT_100_SECURE', 'paiement 100% securis&eacute;');
 
 define('OUR_MARQUES','Nos marques');
 define('CONTACT_SERVICE_CLIENT','Notre service client est ouvert de 7h &agrave; 12h  Lundi au Vendredi au 0970 465 068.');
+define('NEW_MESSAGES','Nouveau(x) message(s)');
+define('NO_MESSAGE','Pas de nouveau message');
 ?>
