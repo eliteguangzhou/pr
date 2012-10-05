@@ -1,5 +1,9 @@
 includes/configure.php
+includes/configure.php~
+includes/configure.php.bak
 bo/includes/configure.php
-download
-./download/
+bo/includes/configure.php~
+bo/includes/configure.php.bak
+*.csv
 *~
+

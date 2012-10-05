@@ -15,7 +15,7 @@
   error_reporting(E_ALL);
 // set the level of error reporting
 //  ini_set('display_errors', true);
-  error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+//   error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 //   error_reporting(1);
 // check support for register_globals
   if (function_exists('ini_get') && (ini_get('register_globals') == false) && (PHP_VERSION < 4.3) ) {
@@ -190,6 +190,12 @@
                 case 'CHARSET' : $configuration['cfgValue'] = 'UTF-8';break;
             }
             break;
+            default:
+                
+                $currency = 'EUR';
+		  $languages_id = 5;
+                break;
+            
     }
     define($configuration['cfgKey'], $configuration['cfgValue']);
   }
@@ -232,8 +238,8 @@
     }
   }
 
-  $blocked_countries = array(73, 74);
-  $blocked_postcode = array(97, 98);
+//   $blocked_countries = array(73, 74);
+//   $blocked_postcode = array(97, 98);
 // define general functions used application-wide
   require(DIR_WS_FUNCTIONS . 'general.php');
   require(DIR_WS_FUNCTIONS . 'html_output.php');
@@ -411,7 +417,6 @@ $nb_products_discount = new nb_products_discount();
       tep_session_register('language');
       tep_session_register('languages_id');
     }
-
     include(DIR_WS_CLASSES . 'language.php');
     $lng = new language();
 
@@ -428,6 +433,10 @@ $nb_products_discount = new nb_products_discount();
     $languages_id = 5;
   }
 
+if (!isset($language) || $language == '' || $language == null){
+  $languages_id = 5;
+  $language='french';
+}
     //Ajout clement : images dans les repertoires de langues
   define('DIR_WS_IMAGES', DIR_WS_LANGUAGES.$language . '/images/');
   define('DIR_WS_ICONS', DIR_WS_IMAGES . 'icons/');
@@ -452,6 +461,8 @@ $nb_products_discount = new nb_products_discount();
       $currency = (USE_DEFAULT_LANGUAGE_CURRENCY == 'true') ? LANGUAGE_CURRENCY : DEFAULT_CURRENCY;
     }
   }
+  if (!isset($currency))
+    $currency = 'EUR';
 
 // navigation history
   if (tep_session_is_registered('navigation')) {
